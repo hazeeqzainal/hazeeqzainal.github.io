@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  hazeeqzainal.github.io:
+    build: .
+    container_name: hazeeqzainal.github.io_container
+    ports:
+      - '5173:5173'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
